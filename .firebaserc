@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fb-clone-f2484": {
+      "hosting": {
+        "fb-clone": [
+          "fb-clone-f2484"
+        ]
+      }
+    }
+  }
+}
