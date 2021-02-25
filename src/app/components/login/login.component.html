@@ -14,16 +14,12 @@
             <button [disabled]="form.invalid || form.pending"
                     class="login-button"
                     *ngIf="!form.pending"
-                    type="submit">
-              Log In
+                    type="submit">Log In
             </button>
           </form>
           <a>Forgotten account?</a>
           <hr>
-          <button class="create-account"
-                  (click)="openRegister()">
-            Create New Account
-          </button>
+          <button class="create-account" (click)="openRegister()">Create New Account</button>
         </mat-card-content>
 
       </mat-card>

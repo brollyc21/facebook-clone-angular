@@ -342,10 +342,6 @@
         .posts__header {
           display:flex;
 
-          img {
-
-          }
-
           .posts__header__right {
             display: flex;
             flex-direction: column-reverse;
@@ -359,6 +355,14 @@
           }
 
 
+        }
+        .posts__avatar {
+          h3 {
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: capitalize;
+            margin-bottom: 0;
+          }
         }
 
         .posts__body {
