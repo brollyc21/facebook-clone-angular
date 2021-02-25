@@ -9,6 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './shared/material.module';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { AngularFireModule } from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -20,9 +24,12 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     MaterialModule,
-    FormsModule
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
